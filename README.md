@@ -1,45 +1,68 @@
-# Hacker Chronicles + Takeshi: The Lazy Dev
+# 🖥️ Hacker Chronicles
 
-**Release candidate 1 — ready for local preview, not published automatically.**
+*Linux, code, experiments, and the occasional questionable decision.*
 
-Two deliberately different static websites in one package:
+Welcome to **Hacker Chronicles**, my little corner of the internet!
 
-- **Hacker Chronicles** (`/`): a personal Linux, Go and tinkering site with an Alacritty-inspired palette, an About page, photo, linked system setup and Thanks page.
-- **Takeshi: The Lazy Dev** (`/lazydev/`): an independent-looking cyberpunk comedy site, kept as designed in Stage 3. Its company, staff reports and sales are **fictional satire**; the coding experiments are real and AI-assisted.
+This is my personal website, a place to share my adventures with Linux, programming, computers, and whatever else catches my curiosity.
 
-Journal and Projects are honest **coming soon** placeholders. Unreviewed Afterfall beta source/binaries are **not distributed** with this site. The Lazy Dev section can describe the game, but the downloads remain gated pending tests, licensing and source review.
+It's not a professional project or some revolutionary piece of software. It's simply a playground where I can experiment, learn new things, break a few things (hopefully not too many), and have some fun along the way.
 
-## Local preview
+## 🌍 Come visit!
 
-From the directory containing `index.html`:
+**[🚀 Visit Hacker Chronicles](https://takeshi-pt.github.io/hacker-chronicles/)**
 
-```sh
+**[🤖 Meet Takeshi: The Lazy Dev](https://takeshi-pt.github.io/hacker-chronicles/lazydev/)**
+
+Yes, there's an entire fictional company run by a questionable robot. Don't ask. Just visit. 😹
+
+## 🔧 What's inside?
+
+- **Hacker Chronicles** — My personal website, stories, computer setup, and experiments.
+- **Takeshi: The Lazy Dev** — A separate little cyberpunk comedy universe, where corporate nonsense meets robot-powered laziness.
+- **Journal** — Thoughts, discoveries, and stories. Coming soon!
+- **Projects** — My experiments and creations. Also coming soon!
+
+The Lazy Dev company, its staff, and its questionable business achievements are fictional satire. The programming experiments behind the scenes are real and AI-assisted.
+
+## 💻 The source code
+
+You're looking at it!
+
+This repository contains the source code for my experimental website. Nothing particularly fancy: mostly HTML, CSS, JavaScript, and a healthy dose of curiosity.
+
+Feel free to explore, see how things work, and learn from my experiments. I'm happy if something here gives you an idea for your own projects.
+
+Just remember: this is a hobby playground, not a polished software product. Things may change, disappear, or occasionally explode. (Hopefully only metaphorically.)
+
+### Want to run it locally?
+
+You don't need complicated tools or a build system.
+
+From the project directory, run:
+
+```bash
 python3 -m http.server 8000
 ```
 
-Open <http://localhost:8000/> (personal site) or <http://localhost:8000/lazydev/> (Takeshi). Stop the server with `Ctrl+C`.
+Then open **http://localhost:8000/** in your browser.
 
-Alternatively, use a free port if `8000` is occupied.
+Press `Ctrl+C` to stop the server.
 
-## GitHub Pages
+That's it! No frameworks, no complicated installation. Just a static website doing its thing.
 
-Put the **contents of this directory** at the root of your `hacker-chronicles` Git repository; `index.html` must be at the repository root. Then enable **Settings → Pages → Deploy from a branch → main / (root)**.
+## 🚧 Always under construction
 
-- No build tool, framework, CDN, analytics or tracking cookies are used.
-- The `.nojekyll` file is intentional.
-- All site and image references are relative; this works on GitHub Pages project sites.
-- Check public Git commit author identity, page copy, links and the personal photo before publishing.
-- Expose only information you intend to make public; images have been saved without embedded camera metadata.
-- A public GitHub repository makes the site code and Git history public. The site can also be viewed locally without publication.
+Hacker Chronicles is an ongoing experiment. Some sections are unfinished, others will grow over time, and new ideas might appear without warning.
 
-Official Pages publishing source guide: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+There's also **Afterfall**, a game experiment still being developed and reviewed. No public downloads yet.
 
-## Next steps (no deadline)
+No deadlines, no corporate roadmaps, no promises of world domination.
 
-- Read and approve the final personal pages and identity details.
-- Preview desktop/mobile layouts on the actual machine.
-- Publish this static website whenever ready.
-- Independently review/compile/test Afterfall before any public software release.
-- Write the first journal article only after there is something worth sharing.
+Well... maybe Takeshi has other plans.
 
-*Made with curiosity, too much coffee and a little help from AI.*
+---
+
+*Built with curiosity, plenty of experimentation, and a little help from AI.*
+
+**Thanks for visiting!** 🐱
