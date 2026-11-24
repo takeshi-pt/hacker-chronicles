@@ -1,45 +1,127 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="#181818" name="theme-color"/>
-<meta content="A simple look at Nunex’s Linux setup: i5-750, 12 GB RAM, EndeavourOS, i3, Alacritty, Zsh, Micro and Go, with official tool links." name="description"/>
-<title>Setup — Hacker Chronicles</title>
-<link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="assets/css/style.css" rel="stylesheet"/>
-<script defer="" src="assets/js/site.js"></script>
-</head>
-<body><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="container">
-<div class="topline"><span class="status"><i aria-hidden="true" class="status-dot"></i> independent terminal dispatches</span><span class="top-right">SIGNAL: ONLINE / EST. 2026</span></div>
-<div class="mainnav"><a aria-label="Hacker Chronicles home" class="brand" href="index.html"><span aria-hidden="true" class="brand-mark">&gt;_</span><span><span class="brand-name">hacker<span>_</span>chronicles</span><br/><span class="brand-sub">a small corner of the terminal</span></span></a><nav aria-label="Main navigation" class="navlinks"><a href="index.html">home</a>
-<a href="journal.html">journal</a>
-<a href="projects.html">projects</a>
-<a aria-current="page" href="setup.html">setup</a>
-<a href="about.html">about</a></nav></div>
-</div></header>
-<div aria-label="Site status" class="container workshop-notice" role="note"><span class="workshop-notice-label">[ WIP / LIVE WORKSHOP ]</span><span>A personal work in progress. Articles and projects appear when they’re ready—no schedule, no promises.</span></div>
-<main id="content">
-<section class="container subpage"><div class="eyebrow">~/setup</div><h1>The old potato still works.</h1><p>Nothing fancy. Just a trusty machine, a lightweight Linux desktop and tools that make tinkering enjoyable. This is a snapshot, not a shopping list or a tutorial.</p></section>
-<section class="container content-wrap narrow">
-<h2 class="section-h">The hardware</h2>
-<div class="sysgrid hardware-grid">
-<div class="syscell"><span>CPU</span><strong>Intel Core i5-750</strong></div>
-<div class="syscell"><span>GPU</span><strong>NVIDIA GeForce GT 710</strong></div>
-<div class="syscell"><span>MEMORY</span><strong>12 GB RAM</strong></div>
-<div class="syscell"><span>STORAGE</span><strong>SSD</strong></div>
-</div>
-<h2 class="section-h">The software</h2>
-<p class="setup-lede">Click any tool to visit its official website or upstream project.</p>
-<div class="tools-list"><div class="tool-row"><span class="tool-label">Operating system</span><span class="tool-value"><a href="https://endeavouros.com/">EndeavourOS</a> <small>· Arch-based Linux</small></span></div>
-<div class="tool-row"><span class="tool-label">Window manager</span><span class="tool-value"><a href="https://i3wm.org/">i3</a> <small>· X11</small></span></div>
-<div class="tool-row"><span class="tool-label">Status bar</span><span class="tool-value"><a href="https://github.com/vivien/i3blocks">i3blocks</a></span></div>
-<div class="tool-row"><span class="tool-label">App launcher</span><span class="tool-value"><a href="https://github.com/davatorium/rofi">Rofi</a></span></div>
-<div class="tool-row"><span class="tool-label">Terminal</span><span class="tool-value"><a href="https://alacritty.org/">Alacritty</a></span></div>
-<div class="tool-row"><span class="tool-label">Shell</span><span class="tool-value"><a href="https://www.zsh.org/">Zsh</a></span></div>
-<div class="tool-row"><span class="tool-label">Text editor</span><span class="tool-value"><a href="https://micro-editor.github.io/">Micro</a></span></div>
-<div class="tool-row"><span class="tool-label">Programming language</span><span class="tool-value"><a href="https://go.dev/">Go</a> <small>· currently learning</small></span></div>
-<div class="tool-row"><span class="tool-label">Go language server</span><span class="tool-value"><a href="https://go.dev/gopls/">gopls</a></span></div>
-<div class="tool-row"><span class="tool-label">Debugger</span><span class="tool-value"><a href="https://github.com/go-delve/delve">Delve</a></span></div></div>
-<p class="setup-footnote">That's the everyday toolkit. The details change whenever curiosity wins and I try something new. <a href="about.html">More about the person running it →</a></p>
-</section>
-</main><footer class="footer"><div class="container footer-grid"><div><strong>&gt;_ hacker_chronicles</strong><p>A personal technical notebook. Built slowly, on purpose.</p><p>© <span data-year="">2026</span> · Static HTML / CSS / a little JS · No tracking</p></div><nav aria-label="Footer" class="footnav"><a href="about.html">about</a><a href="setup.html">setup</a><a href="thanks.html">thanks</a><a href="lazydev/index.html">takeshi</a><a href="index.html">back to top ↑</a></nav></div></footer></body></html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="#181818" name="theme-color"/>
+    <meta content="A simple look at Nunex’s Linux setup: i5-750, 12 GB RAM, EndeavourOS, i3, Alacritty, Zsh, Micro and Go, with official tool links." name="description"/>
+    <title>Setup — Hacker Chronicles</title>
+    <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <script defer="" src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="container">
+        <div class="topline">
+          <span class="status"><i aria-hidden="true" class="status-dot"></i> independent terminal dispatches</span>
+          <span class="top-right">SIGNAL: ONLINE / EST. 2026</span>
+        </div>
+        <div class="mainnav">
+          <a aria-label="Hacker Chronicles home" class="brand" href="index.html"><span aria-hidden="true" class="brand-mark">&gt;_</span><span><span class="brand-name">hacker<span>_</span>chronicles</span><br/><span class="brand-sub">a small corner of the terminal</span></span></a>
+          <nav aria-label="Main navigation" class="navlinks">
+            <a href="index.html">home</a>
+            <a href="journal.html">journal</a>
+            <a href="projects.html">projects</a>
+            <a aria-current="page" href="setup.html">setup</a>
+            <a href="about.html">about</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div aria-label="Site status" class="container workshop-notice" role="note">
+      <span class="workshop-notice-label">[ WIP / LIVE WORKSHOP ]</span>
+      <span>A personal work in progress. Articles and projects appear when they’re ready—no schedule, no promises.</span>
+    </div>
+    <main id="content">
+      <section class="container subpage">
+        <div class="eyebrow">~/setup</div>
+        <h1>The old potato still works.</h1>
+        <p>Nothing fancy. Just a trusty machine, a lightweight Linux desktop and tools that make tinkering enjoyable. This is a snapshot, not a shopping list or a tutorial.</p>
+      </section>
+      <section class="container content-wrap narrow">
+        <h2 class="section-h">The hardware</h2>
+        <div class="sysgrid hardware-grid">
+          <div class="syscell">
+            <span>CPU</span>
+            <strong>Intel Core i5-750</strong>
+          </div>
+          <div class="syscell">
+            <span>GPU</span>
+            <strong>NVIDIA GeForce GT 710</strong>
+          </div>
+          <div class="syscell">
+            <span>MEMORY</span>
+            <strong>12 GB RAM</strong>
+          </div>
+          <div class="syscell">
+            <span>STORAGE</span>
+            <strong>SSD</strong>
+          </div>
+        </div>
+        <h2 class="section-h">The software</h2>
+        <p class="setup-lede">Click any tool to visit its official website or upstream project.</p>
+        <div class="tools-list">
+          <div class="tool-row">
+            <span class="tool-label">Operating system</span>
+            <span class="tool-value"><a href="https://endeavouros.com/">EndeavourOS</a> <small>· Arch-based Linux</small></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">Window manager</span>
+            <span class="tool-value"><a href="https://i3wm.org/">i3</a> <small>· X11</small></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">Status bar</span>
+            <span class="tool-value"><a href="https://github.com/vivien/i3blocks">i3blocks</a></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">App launcher</span>
+            <span class="tool-value"><a href="https://github.com/davatorium/rofi">Rofi</a></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">Terminal</span>
+            <span class="tool-value"><a href="https://alacritty.org/">Alacritty</a></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">Shell</span>
+            <span class="tool-value"><a href="https://www.zsh.org/">Zsh</a></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">Text editor</span>
+            <span class="tool-value"><a href="https://micro-editor.github.io/">Micro</a></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">Programming language</span>
+            <span class="tool-value"><a href="https://go.dev/">Go</a> <small>· currently learning</small></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">Go language server</span>
+            <span class="tool-value"><a href="https://go.dev/gopls/">gopls</a></span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-label">Debugger</span>
+            <span class="tool-value"><a href="https://github.com/go-delve/delve">Delve</a></span>
+          </div>
+        </div>
+        <p class="setup-footnote">That's the everyday toolkit. The details change whenever curiosity wins and I try something new. <a href="about.html">More about the person running it →</a></p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>&gt;_ hacker_chronicles</strong>
+          <p>A personal technical notebook. Built slowly, on purpose.</p>
+          <p>© <span data-year="">2026</span> · Static HTML / CSS / a little JS · No tracking</p>
+        </div>
+        <nav aria-label="Footer" class="footnav">
+          <a href="about.html">about</a>
+          <a href="setup.html">setup</a>
+          <a href="thanks.html">thanks</a>
+          <a href="lazydev/index.html">takeshi</a>
+          <a href="index.html">back to top ↑</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

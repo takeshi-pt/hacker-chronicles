@@ -1,6 +1,60 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0b15"><meta name="description" content="Real Go software projects by the fictional Afterfall Studios; public release pending review."><title>Software status | Takeshi: The Lazy Dev</title><link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/lazydev.css"><script src="assets/js/lazydev.js" defer></script></head><body><a class="skip" href="#main">Skip to content</a><div class="top-strip"><div class="wrap top-strip-inner"><span><strong>HACKER CHRONICLES PRESENTS</strong> / A deliberately fictional software empire</span><span class="right">MARKETS: <em>+9,999%</em> [fictional] &nbsp; CEO EFFORT: <strong>0%</strong></span></div></div><header class="site-header"><div class="wrap"><div class="header-row"><a class="identity" href="index.html" aria-label="Takeshi: The Lazy Dev homepage"><img src="assets/img/favicon.svg" alt="" width="47" height="47"><span><span class="identity-name">TAKESHI<b>_</b> THE LAZY DEV</span><span class="identity-sub">AFTERFALL STUDIOS · EST. 2026</span></span></a><button class="menu-toggle" type="button" data-menu aria-controls="primary-nav" aria-expanded="false">Menu +</button><nav id="primary-nav" class="nav" aria-label="Lazy Dev navigation"><a href="index.html">Home</a><a href="news.html">Breaking news</a><a href="saga.html">The saga</a><a href="software.html" aria-current="page">Software</a><a href="comics.html">Comics</a><a href="studio.html">The studio</a><a class="home-link" href="../index.html">↖ Hacker Chronicles</a></nav></div></div></header><main id="main"><div class="wrap"><section class="page-heading"><div class="over">ACTUAL SOFTWARE / RELEASE IN PREPARATION</div><h1>THE GAMES <span style="color:var(--lime)">ARE REAL.</span></h1><p>The studio is fictional, but Afterfall is a real Go text RPG. The code exists and development is ongoing. Public downloads are paused while we review, build and test the beta properly.</p></section><div class="product"><div class="product-info"><span class="pill">DEVELOPMENT BETA · NOT YET PUBLIC</span><h2>AFTERFALL: THE QUIET PROTOCOL</h2><p>A terminal RPG about an engineer robot rebuilding the world. Fourteen interconnected locations, story quests, tactical program abilities, multiple endings and a Bubble Tea dashboard.</p><div class="actions"><a class="btn" href="saga.html">Read the development saga →</a><a class="btn secondary" href="saga.html">How it got made →</a></div><p class="micro">Public download: coming after QA. The beta is real; this page is not a promise of a finished release date.</p></div><div class="product-art"><pre>   .------------------.
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#0b0b15">
+    <meta name="description" content="Real Go software projects by the fictional Afterfall Studios; public release pending review.">
+    <title>Software status | Takeshi: The Lazy Dev</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/lazydev.css">
+    <script src="assets/js/lazydev.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="top-strip">
+      <div class="wrap top-strip-inner">
+        <span><strong>HACKER CHRONICLES PRESENTS</strong> / A deliberately fictional software empire</span>
+        <span class="right">MARKETS: <em>+9,999%</em> [fictional] &nbsp; CEO EFFORT: <strong>0%</strong></span>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="wrap">
+        <div class="header-row">
+          <a class="identity" href="index.html" aria-label="Takeshi: The Lazy Dev homepage"><img src="assets/img/favicon.svg" alt="" width="47" height="47"><span><span class="identity-name">TAKESHI<b>_</b> THE LAZY DEV</span><span class="identity-sub">AFTERFALL STUDIOS · EST. 2026</span></span></a>
+          <button class="menu-toggle" type="button" data-menu aria-controls="primary-nav" aria-expanded="false">Menu +</button>
+          <nav id="primary-nav" class="nav" aria-label="Lazy Dev navigation">
+            <a href="index.html">Home</a>
+            <a href="news.html">Breaking news</a>
+            <a href="saga.html">The saga</a>
+            <a href="software.html" aria-current="page">Software</a>
+            <a href="comics.html">Comics</a>
+            <a href="studio.html">The studio</a>
+            <a class="home-link" href="../index.html">↖ Hacker Chronicles</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <section class="page-heading">
+          <div class="over">ACTUAL SOFTWARE / RELEASE IN PREPARATION</div>
+          <h1>THE GAMES <span style="color:var(--lime)">ARE REAL.</span></h1>
+          <p>The studio is fictional, but Afterfall is a real Go text RPG. The code exists and development is ongoing. Public downloads are paused while we review, build and test the beta properly.</p>
+        </section>
+        <div class="product">
+          <div class="product-info">
+            <span class="pill">DEVELOPMENT BETA · NOT YET PUBLIC</span>
+            <h2>AFTERFALL: THE QUIET PROTOCOL</h2>
+            <p>A terminal RPG about an engineer robot rebuilding the world. Fourteen interconnected locations, story quests, tactical program abilities, multiple endings and a Bubble Tea dashboard.</p>
+            <div class="actions">
+              <a class="btn" href="saga.html">Read the development saga →</a>
+              <a class="btn secondary" href="saga.html">How it got made →</a>
+            </div>
+            <p class="micro">Public download: coming after QA. The beta is real; this page is not a promise of a finished release date.</p>
+          </div>
+          <div class="product-art">
+            <pre>   .------------------.
    | ENGINEER-07       |
    | STATUS:  [ONLINE] |
    | CPU:     [ OK  ]  |
@@ -8,8 +62,69 @@
    '------------------'
      /|          |\\
     /_|__________|_\\
-       /       \\</pre></div></div><section class="section"><div class="sec-head"><div><span class="over">PUBLIC RELEASE CHECKLIST</span><h2>Before we open downloads</h2></div></div><div class="article-body"><p>Before a public release we want to verify that a fresh checkout actually builds, the dependencies are pinned, the game plays correctly, the README matches reality and the release has an appropriate licence.</p><pre class="code">[ ] clean build and dependency checks
+       /       \\</pre>
+          </div>
+        </div>
+        <section class="section">
+          <div class="sec-head">
+            <div>
+              <span class="over">PUBLIC RELEASE CHECKLIST</span>
+              <h2>Before we open downloads</h2>
+            </div>
+          </div>
+          <div class="article-body">
+            <p>Before a public release we want to verify that a fresh checkout actually builds, the dependencies are pinned, the game plays correctly, the README matches reality and the release has an appropriate licence.</p>
+            <pre class="code">[ ] clean build and dependency checks
 [ ] automated tests
 [ ] actual gameplay test
 [ ] documentation and licence
-[ ] downloadable release + checksums</pre><p>Development builds are kept privately in the workbench for now. Once the review is complete, this page will include the real GitHub repository, release notes and build instructions.</p><div class="alert">The game is real. The company is satire. The release is not available yet, because the QA department finally got a vote.</div></div></section><section class="section" style="padding-top:0"><div class="sec-head"><div><span class="over">DEVELOPMENT HISTORY</span><h2>Our embarrassing release timeline</h2></div></div><div class="three"><article class="card"><span class="meta">BETA 1 · CLASSIC</span><h3>The complete text adventure</h3><p>Working quests and story, classic scrolling terminal interface.</p><a class="read" href="saga.html#act1">Read the history →</a></article><article class="card"><span class="meta">BETA 2 · UI EXPERIMENT</span><h3>Bubble Tea arrives</h3><p>Command completion, side panels, screen views and cinematics. Narrow windows exposed the dashboard weakness.</p><a class="read" href="dashboard.html">Read the scandal →</a></article><article class="card"><span class="meta">BETA 3 · DASHBOARD PATCH</span><h3>The interface we promised</h3><p>More robust separate panels, compact artwork and a more readable interface.</p><a class="read" href="saga.html">Read the development history →</a></article></div></section></div></main><footer class="site-footer"><div class="wrap foot-grid"><div><strong>TAKESHI THE LAZY DEV © <span data-year>2026</span></strong><p>A fictional satire created with AI assistance. The studio, headlines, sales and quotes are make-believe; the game project is real, but public source downloads will follow technical review. A separate creative project inside Hacker Chronicles.</p></div><nav aria-label="Footer navigation"><a href="studio.html">About / disclosure</a><a href="software.html">Real software</a><a href="../index.html">Hacker Chronicles</a></nav></div></footer></body></html>
+[ ] downloadable release + checksums</pre>
+            <p>Development builds are kept privately in the workbench for now. Once the review is complete, this page will include the real GitHub repository, release notes and build instructions.</p>
+            <div class="alert">The game is real. The company is satire. The release is not available yet, because the QA department finally got a vote.</div>
+          </div>
+        </section>
+        <section class="section" style="padding-top:0">
+          <div class="sec-head">
+            <div>
+              <span class="over">DEVELOPMENT HISTORY</span>
+              <h2>Our embarrassing release timeline</h2>
+            </div>
+          </div>
+          <div class="three">
+            <article class="card">
+              <span class="meta">BETA 1 · CLASSIC</span>
+              <h3>The complete text adventure</h3>
+              <p>Working quests and story, classic scrolling terminal interface.</p>
+              <a class="read" href="saga.html#act1">Read the history →</a>
+            </article>
+            <article class="card">
+              <span class="meta">BETA 2 · UI EXPERIMENT</span>
+              <h3>Bubble Tea arrives</h3>
+              <p>Command completion, side panels, screen views and cinematics. Narrow windows exposed the dashboard weakness.</p>
+              <a class="read" href="dashboard.html">Read the scandal →</a>
+            </article>
+            <article class="card">
+              <span class="meta">BETA 3 · DASHBOARD PATCH</span>
+              <h3>The interface we promised</h3>
+              <p>More robust separate panels, compact artwork and a more readable interface.</p>
+              <a class="read" href="saga.html">Read the development history →</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap foot-grid">
+        <div>
+          <strong>TAKESHI THE LAZY DEV © <span data-year>2026</span></strong>
+          <p>A fictional satire created with AI assistance. The studio, headlines, sales and quotes are make-believe; the game project is real, but public source downloads will follow technical review. A separate creative project inside Hacker Chronicles.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="studio.html">About / disclosure</a>
+          <a href="software.html">Real software</a>
+          <a href="../index.html">Hacker Chronicles</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
