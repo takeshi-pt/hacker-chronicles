@@ -1,3 +1,5 @@
+![Hacker Chronicles — retro terminal banner](assets/img/HackerChronicles.png)
+
 # 🖥️ Hacker Chronicles
 
 *Linux, code, experiments, and the occasional questionable decision.*
